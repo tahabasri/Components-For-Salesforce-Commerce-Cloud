@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Color__c</fullName>
+    <externalId>false</externalId>
+    <label>Color</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stainless Steel</fullName>
+                <default>false</default>
+                <label>Stainless Steel</label>
+            </value>
+            <value>
+                <fullName>Fingerprint Resistant Black Slate</fullName>
+                <default>false</default>
+                <label>Fingerprint Resistant Black Slate</label>
+            </value>
+            <value>
+                <fullName>Fingerprint Resistant Black Stainless</fullName>
+                <default>false</default>
+                <label>Fingerprint Resistant Black Stainless</label>
+            </value>
+            <value>
+                <fullName>Color1</fullName>
+                <default>false</default>
+                <label>Color1</label>
+            </value>
+            <value>
+                <fullName>Color2</fullName>
+                <default>false</default>
+                <label>Color2</label>
+            </value>
+            <value>
+                <fullName>Color3</fullName>
+                <default>false</default>
+                <label>Color3</label>
+            </value>
+            <value>
+                <fullName>Color4</fullName>
+                <default>false</default>
+                <label>Color4</label>
+            </value>
+            <value>
+                <fullName>Color5</fullName>
+                <default>false</default>
+                <label>Color5</label>
+            </value>
+            <value>
+                <fullName>Color6</fullName>
+                <default>false</default>
+                <label>Color6</label>
+            </value>
+            <value>
+                <fullName>Color7</fullName>
+                <default>false</default>
+                <label>Color7</label>
+            </value>
+            <value>
+                <fullName>Color8</fullName>
+                <default>false</default>
+                <label>Color8</label>
+            </value>
+            <value>
+                <fullName>Color9</fullName>
+                <default>false</default>
+                <label>Color9</label>
+            </value>
+            <value>
+                <fullName>Color10</fullName>
+                <default>false</default>
+                <label>Color10</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
