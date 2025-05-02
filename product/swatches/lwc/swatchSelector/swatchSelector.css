@@ -1,0 +1,15 @@
+input[type=image]
+{
+    height: 50px;
+    width: 50px;
+}
+
+input[type=image]:disabled
+{
+    opacity:0.3;
+    cursor: not-allowed;
+}
+
+.selected {
+    border: 5px double black;
+}

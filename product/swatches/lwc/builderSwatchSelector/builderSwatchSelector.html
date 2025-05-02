@@ -1,0 +1,33 @@
+<template>
+    <input type="button" value="Select Item 1" onclick={onClick}/><input type="button" value="Disable Item 1" onclick={onDisableClick}/><br>
+    <input type="button" value="Select Item 2" onclick={onClick}/><input type="button" value="Disable Item 2" onclick={onDisableClick}/><br>
+    <input type="button" value="Select Item 3" onclick={onClick}/><input type="button" value="Disable Item 3" onclick={onDisableClick}/><br>
+    <input type="button" value="Clear Selected Item" onclick={onClick}/><input type="button" value="Clear Disabled Item" onclick={onDisableClick}/><br>
+    Centered: <input type="checkbox" id="center" name="center" value="center" onchange={onChange}>
+    <br>
+    # Product Tiles Per Row:<br>
+    1 <input type="radio" name="NumSwatchesPerRow" value="1" onchange={handleProductCount}/><br>
+    2 <input type="radio" name="NumSwatchesPerRow" value="2" onchange={handleProductCount}/><br>
+    3 <input type="radio" name="NumSwatchesPerRow" value="3" onchange={handleProductCount}/><br>
+    4 <input type="radio" name="NumSwatchesPerRow" value="4" onchange={handleProductCount}/><br>
+    5 <input type="radio" name="NumSwatchesPerRow" value="5" onchange={handleProductCount}/><br>
+    6 <input type="radio" name="NumSwatchesPerRow" value="6" onchange={handleProductCount}/><br>
+    7 <input type="radio" name="NumSwatchesPerRow" value="7" onchange={handleProductCount}/><br>
+    8 <input type="radio" name="NumSwatchesPerRow" value="8" onchange={handleProductCount}/><br>
+    9 <input type="radio" name="NumSwatchesPerRow" value="9" onchange={handleProductCount}/><br>
+    10 <input type="radio" name="NumSwatchesPerRow" value="10" onchange={handleProductCount}/><br>
+    11 <input type="radio" name="NumSwatchesPerRow" value="11" onchange={handleProductCount}/><br>
+    12 <input type="radio" name="NumSwatchesPerRow" value="12" onchange={handleProductCount}/><br>
+    13 <input type="radio" name="NumSwatchesPerRow" value="13" onchange={handleProductCount}/><br>
+    <br>
+    <div>
+        <c-swatch-selector
+            items = {items}
+            onchange={handleOnChanged}
+            is-centered={isCentered}
+            num-swatches={numSwatches}
+        >
+        </c-swatch-selector>
+    </div>
+    SELECTED: {selectedItem}
+</template>
