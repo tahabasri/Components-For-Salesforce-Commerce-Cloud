@@ -247,8 +247,15 @@ export default class CartItem extends LightningElement {
      */
     _updateQty(newQty) {
         updateItemInCart(this.item.id, newQty).then((result) => {
-            let updatedCartItem = {cartItem: result};
-            updatedCartItem.cartItem.productDetails.fields = this.item.ProductDetails.fields;
+            let updatedCartItem = {
+                cartItem: {
+                    ...result,
+                    productDetails: {
+                        ...result.productDetails,
+                        fields: this.item.ProductDetails.fields
+                    }
+                }
+            };
             this.item = [updatedCartItem].map(this.mapCartItem)[0];
         }).catch((e) => {
             console.error(e);
